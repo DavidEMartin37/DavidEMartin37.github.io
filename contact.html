@@ -2,41 +2,46 @@
 <html>
   <head>
     <title>Contact Page</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body>
-    <header>
-      <h1>
-          <a href="index.html">David Martin</a>
-        </h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home Page</a></li>
-            <li><a href="contact.html">Contact Page</a></li>
-            <li><a href="portfolio.html">Portfolio Page</a></li>
-          </ul>
-        </nav>
+    <header class="head">
+      <div class="box">
+          <h1><a class="logo" href="index.html">David Martin</a></h1>
+          <nav>
+            <ul>
+              <li><a class="nav" href="index.html">Home Page</a></li>
+              <li><a class="nav" href="contact.html">Contact Page</a></li>
+              <li><a class="nav" href="portfolio.html">Portfolio Page</a></li>
+            </ul>
+          </nav>
+      </div>
     </header>
-    <div>
+    <div class="box">
       <h2>Contact</h2>
-      <hr>
       <form>
-          <fieldset>
+          <fieldset class="form">
               <label>
                 Name
-                <input type="text" name="name" placeholder="Full name">
+                <input class="name" type="text" name="name" placeholder="Full name">
               </label>
               <label>
                 Email
-                <input type="email" name="email" placeholder="Email address">
+                <input class="email" type="email" name="email" placeholder="Email address">
               </label>
               <label>
                 Message
-                <textarea name="comments"></textarea>
+                <textarea class="message" name="comments"></textarea>
               </label>
           </fieldset>
-              <input type="submit" name="submit" value="Submit">
+              <input class="button" type="submit" name="submit" value="Submit">
       </form>
     </div>
+    <footer>
+        <div class="box">
+            Copyright
+        </div>
+      </footer>
   </body>
 </html>
 
