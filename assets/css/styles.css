@@ -2,16 +2,18 @@
   box-sizing: border-box;
 }
 body {
-  
+  background-image: url(../images/papyrus.png);
   font-family: Arial, Helvetica, "Helvetica Neue", sans-serif;
   font-size: 18px;
   line-height: 200%;
   color: #777;
+  margin: 0;
 }
 .box {
   width: 960px;
   margin: 0 auto;
   clear: both;
+  overflow: hidden;
 }
 h1 {
   float: left;
@@ -19,7 +21,7 @@ h1 {
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
-  
+  margin: 0;
   line-height: 90px;
   color: #fff;
   text-align: center;
@@ -30,10 +32,16 @@ h2 {
   color: #4aaaa5;
 }  
 
-  
+.head {
+  border-bottom: 2px solid #ddd;
+  margin: 0;
+  background: #fff;
+  line-height: 3;
+}  
 
 .logo {
   color: #fff;
+  text-decoration: none;
 }
 
 nav {
@@ -44,16 +52,26 @@ nav {
   
 }
 .nav {
-  font-size: 12px;
+  font-size: 22px;
   color: #777;
+  text-decoration: none;
+}
+.nav-list {
+  list-style: none;
+}
+.list-item {
+  float: left;
+}
+.list-item:not(:last-child)::after {
+  content:" |"
 }
 .section {
   float: left;
   width: 100%;
-  padding: 30px;
+  padding: 100px;
   margin: 0;
   background: #fff;
-  border: 100px solid #ddd;
+  
 }
 .photo {
   float: left;
@@ -64,9 +82,9 @@ nav {
 }
 .form {
   float: left;
-  width: 960px;
-  padding-bottom: 50px;
-  border: 100px solid #ddd;
+  width: 900px;
+  background-color: #fff;
+  
 }
 .name {
   width: 900px;
@@ -86,19 +104,29 @@ nav {
   width: 75px;
   height: 30px;
   font-size: 12px;
+  
 }
 .portfolio {
   float: left;
   width: 100%;
   padding: 30px;
-  margin: 0;
+  
   background: #fff;
-  border: 100px solid #ddd;
+  
+  
 }
 .image {
   width: 300px;
   height: 300px;
-  margin: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: #4aaaa5 .85;
+}
+.image-box {
+  position: relative;
+  width: 300px;
+  
+  background-color: #4aaaa5 .85;
 }
 footer {
   padding: 30px 0;
@@ -108,4 +136,5 @@ footer {
   text-align: center;
   background: #666;
   height: 75px;
+  border-top: 6px solid #4aaaa5;
 }
