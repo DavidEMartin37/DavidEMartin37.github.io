@@ -110,7 +110,6 @@ nav {
   float: left;
   width: 100%;
   padding: 30px;
-  
   background: #fff;
   
   
@@ -124,9 +123,9 @@ nav {
 }
 .image-box {
   position: relative;
-  width: 300px;
+  width: 400px;
+  height: 400px;
   
-  background-color: #4aaaa5 .85;
 }
 footer {
   padding: 30px 0;
