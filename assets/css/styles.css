@@ -107,25 +107,33 @@ nav {
   
 }
 .portfolio {
-  float: left;
+  
   width: 100%;
   padding: 30px;
-  background: #fff;
-  
+  ;
   
 }
 .image {
   width: 300px;
   height: 300px;
-  margin-left: 20px;
-  margin-top: 20px;
-  background-color: #4aaaa5 .85;
+  
 }
 .image-box {
+  float: left;
   position: relative;
   width: 400px;
   height: 400px;
-  
+  /* background: #ffffff; */
+  overflow: auto;
+}
+.image-tag {
+  background-color: #4aaaa5;
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  top: 230px;
+  left: 80px;
+  padding: 7px;
 }
 footer {
   padding: 30px 0;
